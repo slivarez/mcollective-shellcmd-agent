@@ -19,34 +19,37 @@ Install
 - Copy ``shellcmd.rb`` to the mcollective agent directory on all 
   of your mcollective-managed machines.
 
-- On your client machine, install the ``mc-shellcmd`` control script
+- On your client machine, install the ``mc-shellcmd`` control script by
+renaming it to shellcmd.rb and putting it in the application directory
 
 - Test it::
 
-    mc-shellcmd 'echo i execute therefore i am'
+    mco shellcmd 'echo i execute therefore i am'
 
-    ===============================================================
-    web01.dom.com exitcode: 0, output:
-    I execute therefore I am
-    ===============================================================
-    web02.dom.com exitcode: 0, output:
-    I execute therefore I am
-    ===============================================================
-    web03.dom.com exitcode: 0, output:
-    I execute therefore I am
-    ===============================================================
-    db01.dom.com exitcode: 0, output:
-    I execute therefore I am
-    ===============================================================
+Do you really want to run the command echo i think therefore i am unfiltered? (y/n): y
 
-    Finished processing 4 / 4 hosts in 221.02 ms
+===============================================================
+HOST:host1.yoursite.com EXITCODE:0 STDOUT:
+===============================================================
+i think therefore i am
+===============================================================
+===============================================================
+HOST:host2.yoursite.com EXITCODE:0 STDOUT:
+===============================================================
+i think therefore i am
+===============================================================
+
+
+
+Finished processing 14 / 14 hosts in 663.52 ms
 
 TODO
 ====
 
 See the Issues page on github for more: http://github.com/joemiller/shellcmd-agent/issues
 
-Author
+Authors
 ======
 
 Joe Miller, <joeym@joeym.net>, 9/13/2010
+Joe McDonagh, <jmcdonagh@thesilentpenguin.com>, 2012-08-16
