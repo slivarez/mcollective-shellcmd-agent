@@ -21,6 +21,8 @@ Install
 - Copy content of ``agent`` directory to the mcollective agent directory on all 
   of your mcollective-managed machines.
 
+- Install ``open4`` gem (http://rubygems.org/gems/open4) on all mcollective-managed machines.
+
 - On your client machine, copy the content of ``application`` directory to the mcollective application directory
 
 - Test it::
