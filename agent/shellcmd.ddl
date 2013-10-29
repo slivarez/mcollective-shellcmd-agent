@@ -3,7 +3,7 @@ metadata :name        => "shellcmd",
          :author      => "Joe Miller, updates by Joe McGonagh and slivarez",
          :license     => "GPLv2",
          :version     => "1.2",
-         :url         => "http://github.com/joemiller/shellcmd-agent",
+         :url         => "https://github.com/slivarez/mcollective-shellcmd-agent/",
          :timeout     => 300
 
 action 'runcmd', :description => "Execute a shell command" do
