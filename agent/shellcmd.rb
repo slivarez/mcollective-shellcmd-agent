@@ -2,14 +2,6 @@ module MCollective
  module Agent
   class Shellcmd<RPC::Agent
 
-    metadata :name => "Run shell commands, get output",
-                :description => "Run arbitrary shell commands and get their output.",
-                :author => "Joe Miller, updates by Joe McDonagh",
-                :license => "GPLv2",
-                :version => "1.1",
-                :url => "http://github.com/joemiller/shellcmd-agent",
-                :timeout => 300
-
     action "runcmd" do
       validate :cmd, String
       require 'open4'
