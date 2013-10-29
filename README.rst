@@ -31,7 +31,6 @@ Install
 TODO
 ====
 
-Make rpc work correctly (for example: ``mco rpc shellcmd runcmd cmd="uname -r"``)
 
 Authors
 ======
